@@ -1,0 +1,20 @@
+export default interface ItemMaster {
+  serialNo?: string,
+  itemId?: string,
+  itemName?: string,
+  itemVersion?: string,
+  assetType?: number,
+  janCode?: number,
+  makerId?: number,
+  makerModel?: number,
+  expirationDateFrom?: string,
+  expirationDateTo?: string,
+  orderUnit?: number,
+  orderUnitMax?: number,
+  itemTitle?: string,
+  itemDescription?: string,
+  deletedRecordDisplayMode?: number,
+  osId?:number,
+  price?:number,
+  tax?:number
+}

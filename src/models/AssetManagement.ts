@@ -1,0 +1,40 @@
+import ItemMaster from "./ItemMaster";
+import MakerMaster from "./MakerMaster";
+import Procurement from "./procurement.model";
+
+export default interface AssetManagement {
+  assetId?: number,
+  assetStatus?: number,
+  assetName?: string,
+  assetType?: number,
+  assetNameKana?: string,
+  assetCd?: string,
+  procurementId?: number,
+  assetKind?: string,
+  assetFrom?: string,
+  assetTo?: string,
+  parentAssetId?: number,
+  recordType?: number,
+  version?: number,
+  createdAt?: string,
+  createdBy?: number,
+  modifiedAt?: string,
+  modifiedBy?: number,
+  deletedAt?: string,
+  deletedBy?: number,
+  isDeleted?: number,
+  kittingStatus?: number,
+  disposalStatus?: number,
+  repairingStatus?: number,
+  pickupStatus?: number,
+  usingStatus?: number,
+  item?: ItemMaster,
+  maker?: MakerMaster,
+  procument?: Procurement
+  isMain?: number,
+  isSet?: number,
+  useStartDate?: string,
+  listAssets?: AssetManagement[],
+  usingFrom?: string,
+  usingTo?: string,
+}

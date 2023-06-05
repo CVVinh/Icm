@@ -1,0 +1,32 @@
+export default interface ArrivalInfo {
+  arrivalId?: number;
+  arrivalCode?: string;
+  isAsset?: number;
+  inspectionStatus?: number;
+  inspectionStatusNote?: string;
+  inspectionDate?: string;
+  inspectionAccountId?: number;
+  accountId?: number;
+  usingFrom?: string;
+  usingTo?: string;
+  assetApproveAccountId?: number;
+  failureAction?: number;
+  failureActionNote?: string;
+  orderId?: number;
+  itemId?: number;
+  itemIdSet?: number;
+  itemNameKana?: string;
+  itemTypeId?: number;
+  price?: number;
+  baseId?: number;
+  arrivalType?: number;
+  arrivalOn?: string;
+  recordType?: number;
+  createdAt?: string;
+  createdBy?: number;
+  modifiedAt?: string;
+  modifiedBy?: number;
+  deletedAt?: string;
+  deletedBy?: number;
+  isDeleted?: number;
+}

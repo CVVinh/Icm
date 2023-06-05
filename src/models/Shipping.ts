@@ -1,0 +1,20 @@
+export default interface Shipping {
+  shippingId?: number,
+  shippingReceptionStatus?: number,
+  shippingStatus?: number,
+  assetId?: number,
+  reception_on?: Date,
+  workingOn?: Date,
+  completedOn?: Date,
+  outsourcingCompanyId?: string,
+  note?: string,
+  version?: number,
+  accountId?: number,
+  deletedRecordDisplayMode?: number,
+  accountGroupId?: number,
+  isDeleted?: number
+  estimatedShippingDate?: string,
+  createdAt?: string,
+  modifiedAt?: string,
+  deletedAt?: string,
+}

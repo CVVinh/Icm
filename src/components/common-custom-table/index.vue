@@ -25,7 +25,7 @@
         <thead>
           <tr>
             <th
-              v-for="(header, index) of props.columnAttrs.labels"
+              v-for="(header, index) of props.columnAttrs.labels" :key='index'
               class="text-left border-table"
               :style="{
                 minWidth: `${props.columnAttrs.columnsWidth[index]}px`,
@@ -39,10 +39,10 @@
             </th>
           </tr>
         </thead>
-        <tbody>
-          <tr v-if="props.data.length !== 0" v-for="item in props.data">
+        <tbody v-if="props.data.length !== 0">
+          <tr v-for="item in props.data" :key='item'>
             <td
-              v-for="(field, index) in props.columnAttrs.fields"
+              v-for="(field, index) in props.columnAttrs.fields" :key='index'
               class="border-table"
               :style="{
                 textDecoration: props.columnAttrs.clickableColumn[index]
@@ -87,7 +87,9 @@
               </div>
             </td>
           </tr>
-          <tr v-else>
+        </tbody>
+        <tbody v-else>
+          <tr>
             <td :colspan="getColspanNum">EMPTY DATA</td>
           </tr>
         </tbody>

@@ -66,8 +66,8 @@
                         @refresh-data="onRefreshData" :table-height="350"
                         :customBodyTable="true" :btnAddItem="false">
                         <template v-slot:customTableBody>
-                            <tr v-for="item in tableState.data">
-                                <td v-for="(field, index) in tableState.tableAttrs.fields"
+                            <tr v-for="item in tableState.data" :key="item">
+                                <td v-for="(field, index) in tableState.tableAttrs.fields"  :key="index"
                                     :class="['border-table', { 'text-center': (typeof field === 'number') }]"
                                     :style="{ textDecoration: tableState.tableAttrs.clickableColumn[index] ? 'underline' : '', cursor: tableState.tableAttrs.clickableColumn[index] ? 'pointer' : '', color: tableState.tableAttrs.clickableColumn[index] ? 'blue' : '' }"
                                     @click="tableState.tableAttrs.clickableColumn[index]">

@@ -1,6 +1,6 @@
 <template>
   <v-expansion-panels elevation="5">
-    <v-expansion-panel v-for="expansion in expansionPanels">
+    <v-expansion-panel v-for="expansion in expansionPanels" :key="expansion">
       <v-expansion-panel-title :expand-icon="`mdi-${expandIcon}`" :collapse-icon="`mdi-${collapseIcon}`">
         <div class="d-flex w-100 justify-space-between pr-4">
           <h4>{{ expansion.panelTitle }}</h4>

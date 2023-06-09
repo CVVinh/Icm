@@ -6,13 +6,13 @@
       v-model="state.tab"
       v-on:update:model-value="$emit('tabChange')"
     >
-      <v-tab v-for="tabDetail in tabDetails" selected-class="">{{
+      <v-tab v-for="tabDetail in tabDetails" :key='tabDetail' selected-class="">{{
         tabDetail.tabName
       }}</v-tab>
     </v-tabs>
     <v-window v-model="state.tab">
       <div class="pa-4">
-        <v-window-item v-for="(item, index) in tabDetails" :value="index">
+        <v-window-item v-for="(item, index) in tabDetails" :key='index' :value="index">
           <v-row>
             <v-col>
               <slot :name="`${item.slot}`"></slot>

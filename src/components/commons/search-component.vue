@@ -102,8 +102,6 @@
 
               </v-col>
             </v-row>
-
-
           </v-expansion-panel-text>
         </v-expansion-panel>
       </v-expansion-panels>

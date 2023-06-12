@@ -20,7 +20,7 @@
         </div>
       </v-expand-transition>
       <RouterView />
-    </v-main>
+    </v-main>x
     <Footer />
   </v-app>
 </template>

@@ -50,39 +50,39 @@
   </v-container>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "HeaderModal",
-  data () {
-      return {
-        btnHeaderList: [
-          {
-            text:"戻る"
-          },
-          {
-            text:"追加"
-          },
-          {
-            text:"変更"
-          },
-          {
-            text:"削除"
-          }
-        ],
-        methodHeaderList: [
-          {
-            method:"戻る",
-          },
-          {
-            method:"最終更新",
-          },
-          {
-            method:"削除",
-          },
-        ],
-      }
-  },
-}
+  data() {
+    return {
+      btnHeaderList: [
+        {
+          text: "戻る"
+        },
+        {
+          text: "追加"
+        },
+        {
+          text: "変更"
+        },
+        {
+          text: "削除"
+        }
+      ],
+      methodHeaderList: [
+        {
+          method: "戻る"
+        },
+        {
+          method: "最終更新"
+        },
+        {
+          method: "削除"
+        }
+      ]
+    };
+  }
+};
 </script>
 
 <style scoped lang="scss">

@@ -47,6 +47,11 @@ const navLists = [
         name: "入荷管理",
         link: "/procurement_management/arrival_management",
       },
+      {
+        id: "payment-management",
+        name: "Thông tin thanh toán",
+        link: "/procurement_management/payment_management",
+      },
     ],
   },
   {

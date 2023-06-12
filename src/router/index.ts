@@ -51,13 +51,18 @@ const router = createRouter({
     },
     {
       path: "/procurement_management/order_management",
-      name: "OrderManagement",
+      name: "Order Management",
       component: () => import("@/views/ProcurementManagement/OrderManagement.vue"),
     },
     {
       path: "/procurement_management/arrival_management",
       name: "Arrival Management",
       component: () => import('@/views/Arrival/index.vue'),
+    },
+    {
+      path: "/procurement_management/payment_management",
+      name: "Payment Management",
+      component: () => import('@/views/PaymentInfo/index.vue')
     },
     {
       path: "/operation-management",

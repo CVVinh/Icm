@@ -312,7 +312,7 @@ const getStatusRes = computed(() => store.getters.getStatusResponse);
 var idUserCurrent = 1
 var mstBaseUser = ref<any[]>([])
 var infoUserSelected = ref(null);
-var baseUserInfo: any = reactive({
+var baseUserInfo: any = ref({
     accountId: null,
     baseId: null,
     baseName: null,
@@ -330,7 +330,7 @@ onMounted(async () => {
 });
 
 function onChangeSelected(data: any){
-    baseUserInfo = mstBaseUser.value.filter(ele => ele.baseId == data)[0]
+    baseUserInfo.value = mstBaseUser.value.filter(ele => ele.baseId == data)[0]
     console.log(baseUserInfo);
 
 }

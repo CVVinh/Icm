@@ -1,7 +1,6 @@
 import apiClient from './api.service'
 import CONST from '@/services/_constant'
 import axios from "axios";
-import _CONFIG from "@/configs/_var";
 
 import AccountResponse from "@/models/response/account-response.model";
 

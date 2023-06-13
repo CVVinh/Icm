@@ -38,6 +38,10 @@ const CONST = {
         OUTSOURCING_COMPANY: {
             LIST: '/func/get-outsourcing-company-list',
         },
+        BASE: {
+            GET_ALL_LIST_BASE: `/func/get-base-list`,
+            GET_ACCOUNT_USER_INFO: (id: number) =>  `/func/get-base-account-info?accountId=${id}`,
+        }
     }
 }
 

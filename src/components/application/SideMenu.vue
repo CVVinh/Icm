@@ -24,4 +24,5 @@ const isDrawerOpen = computed({
     emit('update:drawer', val)
   }
 })
+
 </script>

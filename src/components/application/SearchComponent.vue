@@ -135,12 +135,10 @@ export default {
         item_set_maker_model: '',
         item_set_maker_id: '',
         deleted_flag: '',
-        ItemSetexpirationDateFrom: '',
+        itemSetExpirationDateFrom: '',
         itemSetExpirationDateTo: '',
       }
     }
-
-
   },
   methods: {
     search() {
@@ -148,11 +146,6 @@ export default {
     }
   }
 }
-
-
-
-
-
 </script>
   
 <style>

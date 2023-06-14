@@ -1,9 +1,6 @@
-import axios from 'axios'
-import _CONFIG from '@/configs/_var'
 import CONST from '@/services/_constant'
 import BaseResponse from '@/models/response/base-response.model';
 import BaseUserResponse from '@/models/response/base-response.model';
-import BaseMaster from '@/models/Base';
 import apiClient from './api.service'
 
 class BaseService {
